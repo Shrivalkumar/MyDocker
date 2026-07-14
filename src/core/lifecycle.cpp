@@ -73,7 +73,7 @@ namespace Core {
         pid_t child_pid = clone(
             container_main, 
             stack_top, 
-            CLONE_NEWPID | CLONE_NEWUTS | CLONE_NEWNS | CLONE_NEWNET | SIGCHLD, 
+            CLONE_NEWPID | CLONE_NEWUTS | CLONE_NEWNS | SIGCHLD, 
             &passing_payload
         );
 
@@ -90,10 +90,12 @@ namespace Core {
 
         std::cout << "[Parent] Container process initialized natively on host with PID: " << child_pid << "\n";
 
+
+        std::cout << "[Network] Host network sharing mode engaged. Dynamic internet routing active.\n";
         
-        if(!Network::setup_network(child_pid)) {
-            std::cerr << "[Parent] Network setup failed.\n";
-        }
+        // if(!Network::setup_network(child_pid)) {
+        //     std::cerr << "[Parent] Network setup failed.\n";
+        // }
 
         if(!Cgroup::apply_limits(child_pid, "26214400")){
             std::cerr << "[Parent] Resource allocation failed.\n";
@@ -107,7 +109,7 @@ namespace Core {
         waitpid(child_pid, nullptr, 0);
         
         Cgroup::cleanup();
-        Network::cleanup_network();
+        // Network::cleanup_network(); skipping this as of now 
 
         std::cout << "\n[Parent] Inner shell has exited cleanly. Clearing dynamic memory allocations.\n";
         delete[] stack;

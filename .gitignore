@@ -1,0 +1,8 @@
+# Ignore compiled binaries and build artifacts
+build/
+
+# Ignore the heavy guest operating system images
+images/
+
+# Ignore local text configurations
+.DS_Store

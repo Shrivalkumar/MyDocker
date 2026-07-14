@@ -2,4 +2,7 @@ alpine-baselayout
 alpine-keys
 apk-tools
 busybox
+git
 libc-utils
+nodejs
+npm
