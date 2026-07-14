@@ -117,8 +117,8 @@ Clone your repository & install dependencies:
 
 ```bash
 cd /home
-git clone https://github.com/Shrivalkumar/Vedantu-Product-Prototype
-cd Vedantu-Product-Prototype
+git clone https://github.com/USERNAME/GITHUB-REPO
+cd GITHUB-REPO
 npm install
 ```
 
