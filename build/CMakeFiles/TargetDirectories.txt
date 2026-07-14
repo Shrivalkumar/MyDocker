@@ -1,0 +1,3 @@
+/workspaces/minicontainer/build/CMakeFiles/minicontainer.dir
+/workspaces/minicontainer/build/CMakeFiles/edit_cache.dir
+/workspaces/minicontainer/build/CMakeFiles/rebuild_cache.dir

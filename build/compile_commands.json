@@ -1,0 +1,27 @@
+[
+{
+  "directory": "/workspaces/minicontainer/build",
+  "command": "/usr/bin/clang++ -I/workspaces/minicontainer/include -g -std=gnu++17 -o CMakeFiles/minicontainer.dir/src/main.cpp.o -c /workspaces/minicontainer/src/main.cpp",
+  "file": "/workspaces/minicontainer/src/main.cpp"
+},
+{
+  "directory": "/workspaces/minicontainer/build",
+  "command": "/usr/bin/clang++ -I/workspaces/minicontainer/include -g -std=gnu++17 -o CMakeFiles/minicontainer.dir/src/core/lifecycle.cpp.o -c /workspaces/minicontainer/src/core/lifecycle.cpp",
+  "file": "/workspaces/minicontainer/src/core/lifecycle.cpp"
+},
+{
+  "directory": "/workspaces/minicontainer/build",
+  "command": "/usr/bin/clang++ -I/workspaces/minicontainer/include -g -std=gnu++17 -o CMakeFiles/minicontainer.dir/src/storage/overlay.cpp.o -c /workspaces/minicontainer/src/storage/overlay.cpp",
+  "file": "/workspaces/minicontainer/src/storage/overlay.cpp"
+},
+{
+  "directory": "/workspaces/minicontainer/build",
+  "command": "/usr/bin/clang++ -I/workspaces/minicontainer/include -g -std=gnu++17 -o CMakeFiles/minicontainer.dir/src/core/cgroup.cpp.o -c /workspaces/minicontainer/src/core/cgroup.cpp",
+  "file": "/workspaces/minicontainer/src/core/cgroup.cpp"
+},
+{
+  "directory": "/workspaces/minicontainer/build",
+  "command": "/usr/bin/clang++ -I/workspaces/minicontainer/include -g -std=gnu++17 -o CMakeFiles/minicontainer.dir/src/core/network.cpp.o -c /workspaces/minicontainer/src/core/network.cpp",
+  "file": "/workspaces/minicontainer/src/core/network.cpp"
+}
+]
