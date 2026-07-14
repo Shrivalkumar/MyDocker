@@ -1,4 +1,4 @@
-# MiniContainer Engine
+# MyDocker
 
 A lightweight Linux containerization engine implemented from scratch in C++. This project demonstrates the fundamental building blocks of modern container runtimes (like Docker), leveraging native Linux kernel abstractions to achieve process isolation, resource control, sandboxed filesystems, and host-network namespace integration.
 
